@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".FrameActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".TweenActivity"/>
     </application>
 
 </manifest>

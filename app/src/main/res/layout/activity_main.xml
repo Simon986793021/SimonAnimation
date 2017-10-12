@@ -13,6 +13,13 @@
         android:background="#11cd6e"
         android:textColor="#fff"
         android:onClick="onClick"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="补间动画"
+        android:id="@+id/bt_tween"
+        android:background="#11cd6e"
+        android:textColor="#fff"
+        android:onClick="onClickTween"/>
 
 </LinearLayout>

@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent =new Intent(MainActivity.this,FrameActivity.class);
         startActivity(intent);
     }
+    public void onClickTween(View view)
+    {
+        Intent intent =new Intent(MainActivity.this,TweenActivity.class);
+        startActivity(intent);
+    }
 }
