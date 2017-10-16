@@ -37,4 +37,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(MainActivity.this,MyValueAnimatorActivity.class);
         startActivity(intent);
     }
+    public void onClickObject(View view)
+    {
+        Intent intent=new Intent(MainActivity.this,MyObjectAnimatorActivity.class);
+        startActivity(intent);
+    }
 }

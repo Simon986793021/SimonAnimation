@@ -37,4 +37,12 @@
         android:background="#11cd6e"
         android:textColor="#fff"
         android:onClick="onClickValue"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ObjectAnimator的高级用法"
+        android:id="@+id/bt_property_object"
+        android:background="#11cd6e"
+        android:textColor="#fff"
+        android:onClick="onClickObject"/>
 </LinearLayout>

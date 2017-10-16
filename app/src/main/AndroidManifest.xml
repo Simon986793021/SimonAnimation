@@ -21,6 +21,7 @@
         <activity android:name=".TweenActivity"/>
         <activity android:name=".PropertyActivity"/>
         <activity android:name=".MyValueAnimatorActivity"/>
+        <activity android:name=".MyObjectAnimatorActivity"/>
     </application>
 
 </manifest>
