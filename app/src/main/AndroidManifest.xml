@@ -19,6 +19,8 @@
         <activity android:name=".FrameActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".TweenActivity"/>
+        <activity android:name=".PropertyActivity"/>
+        <activity android:name=".MyValueAnimatorActivity"/>
     </application>
 
 </manifest>

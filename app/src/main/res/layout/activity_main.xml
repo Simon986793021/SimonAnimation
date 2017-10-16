@@ -21,5 +21,20 @@
         android:background="#11cd6e"
         android:textColor="#fff"
         android:onClick="onClickTween"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="属性动画"
+        android:id="@+id/bt_property"
+        android:background="#11cd6e"
+        android:textColor="#fff"
+        android:onClick="onClickProperty"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ValueAnimator的高级用法"
+        android:id="@+id/bt_property_value"
+        android:background="#11cd6e"
+        android:textColor="#fff"
+        android:onClick="onClickValue"/>
 </LinearLayout>
