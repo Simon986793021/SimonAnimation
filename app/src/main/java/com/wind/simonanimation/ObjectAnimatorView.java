@@ -3,6 +3,7 @@ package com.wind.simonanimation;
 import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,6 +12,8 @@ import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.BounceInterpolator;
 
 /**
  * Created by zhangcong on 2017/10/16.
@@ -66,8 +69,8 @@ public class ObjectAnimatorView extends View {
     }
     private void  startAnimation()
     {
-        Point startPoint=new Point(RADIUS,RADIUS);
-        Point endPoint=new Point(getWidth()-RADIUS,getHeight()-RADIUS);
+        Point startPoint=new Point(getWidth()/2,RADIUS);
+        Point endPoint=new Point(getWidth()/2,getHeight()-RADIUS);
         ValueAnimator valueAnimator=ValueAnimator.ofObject(new PointEvaluator(),startPoint,endPoint);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
@@ -83,6 +86,7 @@ public class ObjectAnimatorView extends View {
         AnimatorSet animatorSet=new AnimatorSet();
         animatorSet.play(valueAnimator).with(objectAnimator);
         animatorSet.setDuration(5000);
+        animatorSet.setInterpolator(new DecelerateAccelerateInterpolator());
         animatorSet.start();
     }
 }

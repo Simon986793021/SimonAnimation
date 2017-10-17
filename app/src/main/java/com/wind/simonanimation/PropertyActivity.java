@@ -9,11 +9,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
-import android.view.animation.AnimationSet;
 import android.widget.TextView;
 
 /**
  * Created by zhangcong on 2017/10/13.
+ * @date 2017/10/17
+ * @author Simon
  */
 
 public class PropertyActivity extends Activity{
@@ -43,19 +44,16 @@ public class PropertyActivity extends Activity{
         objectAnimator1.setDuration(3000);
         objectAnimator1.setRepeatCount(3);
         objectAnimator1.start();
-      //  objectAnimator.start();
 
 
         ObjectAnimator objectAnimator2=ObjectAnimator.ofFloat(textView,"scaleY",1,3,1);
         objectAnimator2.setDuration(3000);
         objectAnimator2.setRepeatCount(3);
-      //  objectAnimator2.start();
 
         float x=textView.getTranslationX();
         ObjectAnimator objectAnimator3=ObjectAnimator.ofFloat(textView,"translationX",x,-100f,x);
         objectAnimator3.setDuration(3000);
         objectAnimator3.setRepeatCount(3);
-      //  objectAnimator3.start();
 
         AnimatorSet animatorSet= new AnimatorSet();
         animatorSet.play(objectAnimator).after(objectAnimator1).with(objectAnimator2).with(objectAnimator3);

@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 public class FrameActivity extends Activity{
     private ImageView imageView;
-    private int imgs[]=new int[]{R.drawable.animation1,R.drawable.animation2,R.drawable.animation3,R.drawable.animation4};
+    private int[] imgs = new int[]{R.drawable.animation1, R.drawable.animation2, R.drawable.animation3, R.drawable.animation4};
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
